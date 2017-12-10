@@ -14,4 +14,4 @@ foreach (split //, $inputStr) {
   $count += $_
 }
 
-print "Total Count: ".$count
+print "Total Count: ".$count."\n"

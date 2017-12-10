@@ -16,6 +16,10 @@ while (my $row = <$fh>) {
   #print "$row\n";
 }
 
-my $testString = "adam\@test.com awfjiojfwej blah\@google.com "
+my $testString = "adam\@test.com awfjiojfwej blah\@google.com ";
 
-my @matches = $testString =~ '^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$'
+my @matches = $testString =~ '^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$';
+
+foreach my $match (@matches){
+    print $match;
+ }
